@@ -1,4 +1,7 @@
-
+import os
+import sys
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(BASE_DIR, '..'))
 from torchstat import stat
 from resnet import resnet56
 from vgg import vgg16
